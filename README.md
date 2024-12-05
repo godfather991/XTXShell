@@ -1,10 +1,11 @@
-### Install xtxshell
+### Setup xtxshell
 ```Bash
 make # 编译
+./xtxshell #启动shell
 ```
 注意：若未安装`readline`库，makefile会自动安装，请授予sudo权限。
 
-### Design
+### Design of xtxshell
 
 xtxshell是一个使用C语言实现的简单shell，支持以下功能：
 
@@ -30,7 +31,7 @@ xtxshell是一个使用C语言实现的简单shell，支持以下功能：
 
 -  环境变量、简单脚本
 
-### Usage
+### Detailed Usage
 
 xtxshell是一个使用C语言实现的简单shell，支持以下功能：
 
