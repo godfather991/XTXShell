@@ -317,7 +317,7 @@ void replace_env_variables(char *command) {
 
 // 主循环
 void shell_loop() {
-    signal(SIGCHLD, sigchld_handler); // 处理后台作业信号
+    // signal(SIGCHLD, sigchld_handler); // 处理后台作业信号
     while (1) {
         char cwd[PATH_MAX];
         if (getcwd(cwd, sizeof(cwd)) == NULL) {
