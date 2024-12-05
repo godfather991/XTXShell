@@ -24,7 +24,7 @@ $(TARGET): $(OBJ)
 
 # 检查 readline 是否已安装
 check_readline:
-	@if ! ldconfig -p | grep -q libreadline; then \
+	@if ! find /usr/include -name readline.h | grep -q readline.h; then \
 	    echo "libreadline not found! Installing..."; \
 	    sudo apt-get update && sudo apt-get install -y libreadline-dev; \
 	else \
